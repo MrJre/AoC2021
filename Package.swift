@@ -23,6 +23,7 @@ let package = Package(
             dependencies: [],
             resources: [
                 .copy("Resources/Day1Input.txt"),
+                .copy("Resources/Day2Input.txt"),
             ]),
         .testTarget(
             name: "AdventOfCodeTests",
