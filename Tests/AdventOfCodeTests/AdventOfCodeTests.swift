@@ -27,4 +27,17 @@ final class AdventOfCodeTests: XCTestCase {
         let input = parseDay2Input(from: file)
         XCTAssertEqual(day2part2(input: input), 1727785422)
     }
+    
+    
+    func testDay3Part1() throws {
+        let file = file(forDay: 3)
+        let input = parseDay3Input(from: file)
+        XCTAssertEqual(day3part1(input: input), 3009600)
+    }
+    
+    func testDay3Part2() throws {
+        let file = file(forDay: 3)
+        let input = parseDay3Input(from: file)
+        XCTAssertEqual(day3part2(input: input), 6940518)
+    }
 }
