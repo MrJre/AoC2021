@@ -46,7 +46,7 @@ final class Day4Tests: XCTestCase {
     }
     
     func testDay4Input() {
-        let game = day4Input()
+        let game = parseDay4Input(from: file(forDay: 4))
         
         XCTAssertEqual(game.cards.count, 100)
     }

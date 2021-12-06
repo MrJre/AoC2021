@@ -26,7 +26,8 @@ let package = Package(
                 .copy("Resources/Day2Input.txt"),
                 .copy("Resources/Day3Input.txt"),
                 .copy("Resources/Day4Input.txt"),
-                .copy("Resources/Day5Input.txt")
+                .copy("Resources/Day5Input.txt"),
+                .copy("Resources/Day6Input.txt")
             ]),
         .testTarget(
             name: "AdventOfCodeTests",
