@@ -18,7 +18,7 @@ func day1part2(input: [Int]) -> Int {
     var windows: [Int] = []
     
     for index in (0...input.count - windowSize) {
-        windows.append(input[index..<index + windowSize].reduce(0) { $0 + $1 })
+        windows.append(input[index..<index + windowSize].reduce(0, +)
     }
     
     return day1part1(input: windows)

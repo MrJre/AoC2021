@@ -32,7 +32,7 @@ func day6part2(input: [Int], numberOfDays: Int) -> Int {
         buckets.append(fishMultiplyingToday)
     }
             
-    return buckets.reduce(0) { $0 + $1 }
+    return buckets.reduce(0, +)
 }
 
 

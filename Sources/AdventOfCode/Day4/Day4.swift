@@ -61,7 +61,7 @@ struct Result {
     let finalNumber: Int
     
     func score() -> Int {
-        let sum = card.unmarked().reduce(0) { $0 + $1 }
+        let sum = card.unmarked().reduce(0, +)
         return sum * finalNumber
     }
 }
