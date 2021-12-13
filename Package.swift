@@ -33,7 +33,8 @@ let package = Package(
                 .copy("Resources/Day9Input.txt"),
                 .copy("Resources/Day10Input.txt"),
                 .copy("Resources/Day11Input.txt"),
-                .copy("Resources/Day12Input.txt")
+                .copy("Resources/Day12Input.txt"),
+                .copy("Resources/Day13Input.txt")
             ]),
         .testTarget(
             name: "AdventOfCodeTests",

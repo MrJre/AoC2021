@@ -25,11 +25,6 @@ func day5Part2(input: [LineSegment]) -> Int {
     return grid.countIntersections()
 }
 
-struct Point {
-    let x: Int
-    let y: Int
-}
-
 struct LineSegment {
     let pointA: Point
     let pointB: Point
