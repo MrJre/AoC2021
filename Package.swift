@@ -14,13 +14,19 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(
+             url: "https://github.com/apple/swift-collections.git",
+             .branchItem("main")
+           )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "AdventOfCode",
-            dependencies: [],
+            dependencies: [
+                .product(name: "Collections", package: "swift-collections")
+            ],
             resources: [
                 .copy("Resources/Day1Input.txt"),
                 .copy("Resources/Day2Input.txt"),
@@ -35,7 +41,8 @@ let package = Package(
                 .copy("Resources/Day11Input.txt"),
                 .copy("Resources/Day12Input.txt"),
                 .copy("Resources/Day13Input.txt"),
-                .copy("Resources/Day14Input.txt")
+                .copy("Resources/Day14Input.txt"),
+                .copy("Resources/Day15Input.txt"),
             ]),
         .testTarget(
             name: "AdventOfCodeTests",
