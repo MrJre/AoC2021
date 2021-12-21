@@ -2,7 +2,7 @@ import Foundation
 import XCTest
 @testable import AdventOfCode
 
-class Day17Tests : XCTestCase {
+class Day16Tests : XCTestCase {
  
     func testParseInput() throws {
         let input = "D2FE28"
